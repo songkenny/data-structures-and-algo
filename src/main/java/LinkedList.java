@@ -29,7 +29,7 @@ public class LinkedList {
     }
 
     public Node get(int index) {
-        if (index > size) {
+        if (index >= size) {
             throw new IndexOutOfBoundsException();
         }
         Node node = head;
@@ -50,7 +50,15 @@ public class LinkedList {
     }
 
     public void delete(Node node) {
+        size--;
         Node currentNode = head;
+
+        if (node == tail && node == head) {
+            head = null;
+            tail = null;
+            return;
+        }
+
         if (currentNode == node) {
             head = head.next;
             return;
@@ -63,11 +71,22 @@ public class LinkedList {
             tail = currentNode;
         }
         currentNode.next = node.next;
-        size--;
     }
 
     public void delete(int index) {
         Node currentNode = head;
+
+        if(index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        size--;
+
+        if (size == 0) {
+            head = null;
+            tail = null;
+            return;
+        }
 
         if (index == 0) {
             head = head.next;
@@ -81,8 +100,6 @@ public class LinkedList {
             tail = currentNode;
         }
         currentNode.next = currentNode.next.next;
-        size--;
-
 
     }
 

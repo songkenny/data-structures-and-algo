@@ -191,7 +191,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void testDeleteingNthNode(){
+    public void testDeletingNthNode(){
         LinkedList linkedList = new LinkedList();
         Node node1 = new Node(5);
         Node node2 = new Node(7);
@@ -208,5 +208,45 @@ public class LinkedListTest {
         assertEquals(expected, actual, "Should return -1 after deleting specified index");
     }
 
+    @Test
+    public void testDeleteNthExceptionError() {
 
+        LinkedList linkedList = new LinkedList();
+        Node node1 = new Node(5);
+        Node node2 = new Node(7);
+        Node node3 = new Node(9);
+        linkedList.add(node1);
+        linkedList.add(node2);
+        linkedList.add(node3);
+
+        assertThrows(IndexOutOfBoundsException.class, () -> {linkedList.delete(5);}, "Using an index larger than list should throw Exception");
+    }
+
+    @Test
+    public void testDeletingNodeFromOneElementList() {
+
+        LinkedList linkedList = new LinkedList();
+        Node node1 = new Node(5);
+        linkedList.add(node1);
+        linkedList.delete(node1);
+
+        Node expected = null;
+        Node actual = linkedList.getLast();
+
+        assertEquals(expected, actual, "Deleting the only node by reference in the list should return Null on getLast()");
+    }
+
+    @Test
+    public void testDeletingNodeFromOneElementListByIndex() {
+
+        LinkedList linkedList = new LinkedList();
+        Node node1 = new Node(5);
+        linkedList.add(node1);
+        linkedList.delete(0);
+
+        Node expected = null;
+        Node actual = linkedList.getLast();
+
+        assertEquals(expected, actual, "Deleting the only node by index in the list should return Null on getLast()");
+    }
 }
