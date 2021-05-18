@@ -2,5 +2,7 @@ QuicksortTest.java
  QuicksortTest
 LinkedListTest.java
  LinkedListTest
+BubbleSortTest.java
+ BubbleSortTest
 MergeSortTest.java
  MergeSortTest

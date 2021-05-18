@@ -6,3 +6,5 @@ Quicksort.java
  Quicksort
 MergeSort.java
  MergeSort
+BubbleSort.java
+ BubbleSort
