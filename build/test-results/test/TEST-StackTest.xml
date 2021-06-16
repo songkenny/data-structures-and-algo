@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StackTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-16T17:04:10" hostname="Linettes-MacBook-Pro.local" time="0.028">
+  <properties/>
+  <testcase name="testRemoveForNonEmptyStack()" classname="StackTest" time="0.019"/>
+  <testcase name="testRemoveWhenStackLengthOne()" classname="StackTest" time="0.001"/>
+  <testcase name="testPeek()" classname="StackTest" time="0.001"/>
+  <testcase name="testStackEmptiness()" classname="StackTest" time="0.001"/>
+  <testcase name="testAddingFirstNewNode()" classname="StackTest" time="0.0"/>
+  <testcase name="nodeHoldsIntegerData()" classname="StackTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
