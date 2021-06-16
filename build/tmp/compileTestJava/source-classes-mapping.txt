@@ -1,8 +1,12 @@
-QuicksortTest.java
- QuicksortTest
-LinkedListTest.java
- LinkedListTest
 BubbleSortTest.java
  BubbleSortTest
+LinkedListTest.java
+ LinkedListTest
+QuicksortTest.java
+ QuicksortTest
+QueueTest.java
+ QueueTest
 MergeSortTest.java
  MergeSortTest
+StackTest.java
+ StackTest

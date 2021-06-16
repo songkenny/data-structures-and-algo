@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BubbleSortTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-18T20:58:15" hostname="Linettes-MBP.lan" time="0.022">
-  <properties/>
-  <testcase name="bubblesort_oneElement()" classname="BubbleSortTest" time="0.018"/>
-  <testcase name="bubblesort_randomArray()" classname="BubbleSortTest" time="0.001"/>
-  <testcase name="bubblesort_empty()" classname="BubbleSortTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

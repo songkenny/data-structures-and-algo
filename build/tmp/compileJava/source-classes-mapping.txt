@@ -2,9 +2,13 @@ Node.java
  Node
 LinkedList.java
  LinkedList
-Quicksort.java
- Quicksort
 MergeSort.java
  MergeSort
 BubbleSort.java
  BubbleSort
+Quicksort.java
+ Quicksort
+Queue.java
+ Queue
+Stack.java
+ Stack
