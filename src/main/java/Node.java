@@ -7,5 +7,4 @@ public class Node {
         this.data = data;
     }
 
-
 }
